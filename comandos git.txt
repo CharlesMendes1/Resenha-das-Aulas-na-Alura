@@ -1,0 +1,61 @@
+﻿git
+
+$ clear - limpa tela
+$ get init - inicia repositorio get
+$ get status - verifica se teve auteração no repositorio
+//untracked - arquivo novo sem rastreamento de versão no repositorio
+------------------------Staging Area (sala de espera)---------------------------
+$ git add {nome arquivo s/ chaves} - para adicionar o rastreamento do repositorio
+---para adicionar todas as extenções
+$ git add *.txt
+$ git add *.php
+---
+---para adionar todos os arquivos do diretorio
+$ git add .
+---
+
+----como ignorar um arquivo---
+cria um arquivo com nome {.gitingore}
+dentro do arquivo colocar arquivos que serão ignorados pelo git
+----
+-----------------------GIT Directory(repositorio final)--------------------------------------------
+Para comitar arquivos adicionados
+$ git commit -m "Estrutura inicial do projeto" 
+
+como comitar arquivos que ja foram modificados
+$ git commit -a -m "segunda atualizacoa no terminado"
+---------------------------------------------------------------------------------------------
+para verificar atualizações no documento que foi modificado 
+$ git diff
+para verificar atualizações no documento na Staging Area(sala de espera)
+$ git diff --staged
+
+para verificar todos os logs dos meus commits
+$ git log
+
+visualizador de relatorio de atualizações do git
+$ gitk
+
+mostrar todos os commits do sistema
+$ git log --pretty=oneline
+
+
+como editar(remandar) um commit que ja foi adicionado
+adiciona os novos arquivos - $git add .
+e 
+$ git commit --amend -m "nova descricão do commit"
+(amend = emendar)
+
+como tirar arquivo da (Stage Area) para não ir no commit
+$git reset HEAD {nomeDoArquivo s/ chaves}
+
+
+modifiquei arquivo e quero voltar o arquivo ao commit anterior
+$ git checkout -- {nomeDoArquivo s/ chaves}
+
+remover arquivo do versionamento
+$ git rm {nomeDoArquivo s/ chaves} 
+
+-----------------------------------
+
+
